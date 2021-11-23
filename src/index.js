@@ -1,4 +1,12 @@
 /* eslint-disable react/jsx-filename-extension */
+import 'core-js/es/promise';
+import 'core-js/es/array';
+import 'core-js/es/number';
+import 'core-js/es/object/assign';
+import 'core-js/es/symbol/iterator';
+import 'core-js/es/string/replace-all';
+import 'core-js/es/string/pad-start';
+import 'regenerator-runtime/runtime';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Router from './Routes';
