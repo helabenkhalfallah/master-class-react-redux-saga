@@ -35,7 +35,7 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        exclude: /node_modules\/(?!(antd|react-grid-layout|react-resizable)\/).*/,
+        exclude: /node_modules\/(?!(antd)\/).*/,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss$/i,
-        exclude: /node_modules\/(?!(react-grid-layout|react-resizable)\/).*/,
+        exclude: /node_modules/,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'antd';
 
 class ArticlesHomePage extends Component{
     componentDidMount() {
@@ -7,7 +8,9 @@ class ArticlesHomePage extends Component{
 
     render() {
         return(
-            <div>ArticlesHomePage</div>
+            <div>
+                <Button type="primary">Hello !</Button>
+            </div>
         )
     }
 } 
