@@ -10,11 +10,11 @@ import LazyRoutes from './LazyRoutes';
 import Path from './Path';
 
 const {
-  ARTICLE_HOME_PAGE
+  ARTICLE_HOME_PAGE,
 } = Path;
 
 const {
- ArticleHomePage
+  ArticleHomePage,
 } = LazyRoutes;
 
 const Router = () => (

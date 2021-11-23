@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, } from 'react';
 import ArticlesList from '../components/ArticlesList';
 
 // ui controller
@@ -6,19 +6,18 @@ import ArticlesList from '../components/ArticlesList';
 // container
 // ui - logic
 // side efects : appel http, routage
-class ArticlesHomePage extends Component{
-    componentDidMount() {
-        
-    }
+class ArticlesHomePage extends Component {
+  componentDidMount() {
 
-    render() {
+  }
 
-        return(
-            <div>
-               <ArticlesList title="Hello !" />
-            </div>
-        )
-    }
-} 
+  render() {
+    return (
+      <div>
+        <ArticlesList title="Hello !" />
+      </div>
+    );
+  }
+}
 
 export default ArticlesHomePage;

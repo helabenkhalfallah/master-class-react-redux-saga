@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Router from './Routes';
@@ -23,7 +24,6 @@ import 'antd/es/radio/style/css';
 import 'antd/es/notification/style/css';
 
 ReactDOM.render(
-  // eslint-disable-next-line react/jsx-filename-extension
   <Router />,
   document.getElementById('root')
 );

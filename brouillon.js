@@ -1,10 +1,10 @@
-let domContainer = document.getElementById('container');
+const domContainer = document.getElementById('container');
 
 // Clear the tree
 domContainer.innerHTML = '';
 
 // Create the new host instance tree
-let domNode = document.createElement('button');
+const domNode = document.createElement('button');
 domNode.className = 'red';
 domContainer.appendChild(domNode);
 
@@ -21,7 +21,6 @@ domContainer.appendChild(domNode);
 <div style={{color: 'green', fontWeight: 'bold'}} />
 */
 
-
 /*
 // First render
   <dialog>
@@ -34,7 +33,6 @@ domContainer.appendChild(domNode);
    <input />
   </dialog>
 
-
 let oldInputNode = dialogNode.firstChild;
 dialogNode.removeChild(oldInputNode);
 
@@ -44,7 +42,6 @@ dialogNode.appendChild(pNode);
 
 let newInputNode = document.createElement('input');
 dialogNode.appendChild(newInputNode);
-
 
 <input> hasn’t been replaced with <p> — it just moved. We don’t want to lose its selection, focus state, and content due to re-creating the DOM.
 
@@ -108,11 +105,11 @@ container.appendChild(node)
 */
 
 /*
-const somme = (x, y) => x + y 
+const somme = (x, y) => x + y
 
 function somme(x, y) {
   return x + y
 }
 */
 // bundle
-// chunck 
+// chunck

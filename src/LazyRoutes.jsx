@@ -7,7 +7,7 @@ const ArticleHomePage = (
 );
 
 const LazyRoutes = {
-    ArticleHomePage,
-}
+  ArticleHomePage,
+};
 
 export default LazyRoutes;
