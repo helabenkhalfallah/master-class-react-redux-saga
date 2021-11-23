@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'antd';
-import reduxSaga from 'redux-saga';
+import ArticlesList from '../components/ArticlesList';
 
 // ui controller
 // view controller
@@ -16,7 +15,7 @@ class ArticlesHomePage extends Component{
 
         return(
             <div>
-                <Button type="primary">Hello !</Button>
+               <ArticlesList title="Hello !" />
             </div>
         )
     }
