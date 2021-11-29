@@ -30,6 +30,8 @@ import 'antd/es/steps/style/css';
 import 'antd/es/checkbox/style/css';
 import 'antd/es/radio/style/css';
 import 'antd/es/notification/style/css';
+import 'antd/es/divider/style/css';
+import 'antd/es/tag/style/css';
 
 ReactDOM.render(
   <Router />,

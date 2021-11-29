@@ -1,13 +1,20 @@
 import { lazy, } from 'react';
 
-const ArticleHomePage = (
+const AddArticlePage = (
   lazy(() => (
-    import('./pages/ArticlesHomePage')
+    import('./pages/AddArticlePage')
+  ))
+);
+
+const ArticleListPage = (
+  lazy(() => (
+    import('./pages/ArticleListPage')
   ))
 );
 
 const LazyRoutes = {
-  ArticleHomePage,
+  AddArticlePage,
+  ArticleListPage,
 };
 
 export default LazyRoutes;
