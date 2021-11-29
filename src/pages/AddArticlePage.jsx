@@ -25,7 +25,13 @@ class AddArticlePage extends Component {
 
   render() {
     return (
-      <Suspense fallback={<Spin size="large" />}>
+      <Suspense fallback={(
+        <Spin
+          spinning
+          size="large"
+        />
+      )}
+      >
         <ArticleForm
           onSubmitForm={this.onSubmitForm}
           onCancelForm={this.onCancelForm}

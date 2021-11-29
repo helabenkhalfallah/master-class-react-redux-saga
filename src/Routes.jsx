@@ -5,7 +5,9 @@ import {
   Switch,
   Redirect,
 } from 'react-router-dom';
-import Spin from 'antd/es/spin';
+import {
+  Spin,
+} from 'antd';
 import withReduxBoot from './core/redux/withReduxBoot';
 import ReducerRooter from './commons/ReducerRooter';
 import SagaRoot from './commons/SagaRoot';
@@ -24,7 +26,10 @@ const {
 
 const Router = () => (
   <Suspense fallback={(
-    <Spin spinning />
+    <Spin
+      spinning
+      size="large"
+    />
   )}
   >
     <HashRouter>
