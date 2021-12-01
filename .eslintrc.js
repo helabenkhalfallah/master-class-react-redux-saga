@@ -56,6 +56,8 @@ module.exports = {
     },
   ],
   rules: {
+    'react/jsx-no-useless-fragment': 0,
+    'default-param-last': 0,
     'react/jsx-props-no-spreading': 0,
     'react/function-component-definition': 0,
     // maximum depth that blocks can be nested

@@ -2,7 +2,7 @@ import React, { lazy, Component, Suspense, } from 'react';
 import {
   Spin,
 } from 'antd';
-import withPageLayout from '../core/hocs/withPageLayout';
+import withPageLayout from '../../commons/hocs/withPageLayout';
 
 const ArticleForm = (
   lazy(() => (

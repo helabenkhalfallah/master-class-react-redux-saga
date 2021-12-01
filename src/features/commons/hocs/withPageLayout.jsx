@@ -45,7 +45,9 @@ const withPageLayout = () => (WrappedComponent) => {
               Menu
             </Sider>
             <Content>
-              <WrappedComponent />
+              <WrappedComponent
+                {...this.props}
+              />
             </Content>
           </Layout>
           <Footer>

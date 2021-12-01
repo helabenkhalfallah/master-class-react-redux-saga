@@ -35,17 +35,24 @@ const ArticlesList = ({
     );
   }
 
-  return articles?.map((item) => {
-    const {
-      title,
-      description,
-    } = item;
-    return (
-      <Button onClick={(event) => console.log(event)}>
-        {`${title} - ${description}`}
-      </Button>
-    );
-  });
+  return (
+    <>
+      {articles?.map((item) => {
+        const {
+          title,
+          description,
+        } = item;
+        return (
+          <Button
+            key={title}
+            onClick={(event) => console.log(event)}
+          >
+            {`${title} - ${description}`}
+          </Button>
+        );
+      })}
+    </>
+  );
 };
 
 ArticlesList.propTypes = {

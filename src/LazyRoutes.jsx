@@ -2,13 +2,13 @@ import { lazy, } from 'react';
 
 const AddArticlePage = (
   lazy(() => (
-    import('./pages/AddArticlePage')
+    import('./features/articles/pages/AddArticlePage')
   ))
 );
 
 const ArticleListPage = (
   lazy(() => (
-    import('./pages/ArticleListPage')
+    import('./features/articles/pages/ArticleListPage')
   ))
 );
 

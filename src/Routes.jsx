@@ -9,8 +9,8 @@ import {
   Spin,
 } from 'antd';
 import withReduxBoot from './core/redux/withReduxBoot';
-import ReducerRooter from './commons/ReducerRooter';
-import SagaRoot from './commons/SagaRoot';
+import ReducerRooter from './features/commons/redux/ReducerRooter';
+import SagaRoot from './features/commons/redux/SagaRoot';
 import LazyRoutes from './LazyRoutes';
 import Path from './Path';
 
@@ -46,7 +46,7 @@ const Router = () => (
         />
         <Redirect
           from="/"
-          to={ADD_ARTICLE_PAGE}
+          to={LIST_ARTICLE_PAGE}
         />
       </Switch>
     </HashRouter>
