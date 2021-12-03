@@ -15,9 +15,18 @@ export default function* getArticlesListService(action) {
   try {
     const baseUrl = 'http://localhost:3000';
     const response = yield call(getArticlesList, baseUrl, action.payload);
+    /* if (response.data === null
+      && action.nbreOfRetry < 4) {
+      yield delay(1000); //
+      yield call(getArticlesListService, {
+        ...action,
+        nbreOfRetry: 1,
+      });
+    } */
 
     // parse the response
     const articles = response.data;
+    /// map
 
     // check if we have success or fail
     if (articles

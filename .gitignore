@@ -108,3 +108,6 @@ stats-prod.json
 
 # eslint
 .eslintcache
+
+# jest cache
+jest/tmp/

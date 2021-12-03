@@ -52,6 +52,8 @@ const AddArticleForm = ({
   ] = useState('');
   const articleFormTitle = 'Ajout d\'un artice';
 
+  console.log('articleTitle : ', articleTitle);
+
   return (
     <form>
       <Title

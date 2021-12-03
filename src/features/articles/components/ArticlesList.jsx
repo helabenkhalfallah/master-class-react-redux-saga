@@ -2,7 +2,9 @@ import React from 'react';
 import Proptypes from 'prop-types';
 import {
   Spin,
-  Button,
+  Avatar,
+  List,
+  Typography,
   Alert,
 } from 'antd';
 
@@ -29,29 +31,50 @@ const ArticlesList = ({
     return (
       <Alert
         message="Chargement des articles"
-        description="Une erreur c'est produite"
+        description={articlesError}
         type="error"
       />
     );
   }
 
+  if (!articles || !articles.length) {
+    return (
+      <Alert
+        message="Chargement des articles"
+        description="Aucun article à afficher"
+        type="info"
+      />
+    );
+  }
+
+  // const siderStatus = useSelector((state) => state.siderStatus)
+  // const dispatch = useDispatch()
+  /*
+  <button onClick={() => dispatch({ type: 'open-sider' })}>
+        Open/close sider
+      </button>
+  */
+
   return (
-    <>
-      {articles?.map((item) => {
-        const {
-          title,
-          description,
-        } = item;
-        return (
-          <Button
-            key={title}
-            onClick={(event) => console.log(event)}
-          >
-            {`${title} - ${description}`}
-          </Button>
-        );
-      })}
-    </>
+    <List
+      header={<div>Header</div>}
+      footer={<div>Footer</div>}
+      bordered
+      dataSource={articles}
+      renderItem={(item) => (
+        <List.Item>
+          <List.Item.Meta
+            avatar={<Avatar src={item.urlToImage} />}
+            title={item.title}
+            description={(
+              <Typography.Paragraph level={4}>
+                {item.description}
+              </Typography.Paragraph>
+            )}
+          />
+        </List.Item>
+      )}
+    />
   );
 };
 
@@ -59,6 +82,7 @@ ArticlesList.propTypes = {
   articles: Proptypes.arrayOf(Proptypes.shape({
     title: Proptypes.string,
     description: Proptypes.string,
+    urlToImage: Proptypes.string,
   })),
   articlesLoading: Proptypes.bool,
   articlesError: Proptypes.string,

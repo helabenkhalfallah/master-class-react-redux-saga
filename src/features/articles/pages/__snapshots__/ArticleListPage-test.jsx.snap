@@ -1,0 +1,746 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Suite - ArticleListPage Should render articles 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(PageLayoutComponent)
+    articleList={
+      Array [
+        Object {
+          "description": "",
+          "imageUrl": "",
+          "keywords": Array [],
+          "title": "",
+        },
+      ]
+    }
+    articleListError={null}
+    articleListLoading={false}
+  >
+    <PageLayoutComponent
+      articleList={
+        Array [
+          Object {
+            "description": "",
+            "imageUrl": "",
+            "keywords": Array [],
+            "title": "",
+          },
+        ]
+      }
+      articleListError={null}
+      articleListLoading={true}
+      requestArticleList={[Function]}
+    >
+      <Header
+        style={
+          Object {
+            "background": "#78E1F3",
+            "height": "10vh",
+            "width": "100%",
+          }
+        }
+      >
+        <Basic
+          prefixCls="ant-layout-header"
+          style={
+            Object {
+              "background": "#78E1F3",
+              "height": "10vh",
+              "width": "100%",
+            }
+          }
+          tagName="header"
+        >
+          <header
+            className="ant-layout-header"
+            style={
+              Object {
+                "background": "#78E1F3",
+                "height": "10vh",
+                "width": "100%",
+              }
+            }
+          >
+            <Title>
+              <Base
+                component="h1"
+              >
+                <LocaleReceiver
+                  componentName="Text"
+                >
+                  <ResizeObserver
+                    disabled={true}
+                    onResize={[Function]}
+                  >
+                    <Typography
+                      className=""
+                      component="h1"
+                      style={
+                        Object {
+                          "WebkitLineClamp": null,
+                        }
+                      }
+                    >
+                      <h1
+                        className="ant-typography"
+                        style={
+                          Object {
+                            "WebkitLineClamp": null,
+                          }
+                        }
+                      >
+                        Gestion des articles
+                      </h1>
+                    </Typography>
+                  </ResizeObserver>
+                </LocaleReceiver>
+              </Base>
+            </Title>
+          </header>
+        </Basic>
+      </Header>
+      <Layout
+        style={
+          Object {
+            "background": "#ADCFF3",
+            "height": "80vh",
+          }
+        }
+      >
+        <BasicLayout
+          prefixCls="ant-layout"
+          style={
+            Object {
+              "background": "#ADCFF3",
+              "height": "80vh",
+            }
+          }
+          tagName="section"
+        >
+          <section
+            className="ant-layout ant-layout-has-sider"
+            style={
+              Object {
+                "background": "#ADCFF3",
+                "height": "80vh",
+              }
+            }
+          >
+            <Sider
+              theme="light"
+            >
+              <InternalSider
+                collapsedWidth={80}
+                collapsible={false}
+                defaultCollapsed={false}
+                reverseArrow={false}
+                siderHook={
+                  Object {
+                    "addSider": [Function],
+                    "removeSider": [Function],
+                  }
+                }
+                style={Object {}}
+                theme="light"
+                width={200}
+              >
+                <aside
+                  className="ant-layout-sider ant-layout-sider-light"
+                  style={
+                    Object {
+                      "flex": "0 0 200px",
+                      "maxWidth": "200px",
+                      "minWidth": "200px",
+                      "width": "200px",
+                    }
+                  }
+                >
+                  <div
+                    className="ant-layout-sider-children"
+                  >
+                    Menu
+                  </div>
+                </aside>
+              </InternalSider>
+            </Sider>
+            <Content>
+              <Basic
+                prefixCls="ant-layout-content"
+                tagName="main"
+              >
+                <main
+                  className="ant-layout-content"
+                >
+                  <ArticleListPage
+                    articleList={
+                      Array [
+                        Object {
+                          "description": "",
+                          "imageUrl": "",
+                          "keywords": Array [],
+                          "title": "",
+                        },
+                      ]
+                    }
+                    articleListError={null}
+                    articleListLoading={true}
+                    requestArticleList={[Function]}
+                  >
+                    <Suspense
+                      fallback={
+                        <Spin
+                          size="large"
+                          spinning={true}
+                          wrapperClassName=""
+                        />
+                      }
+                    >
+                      <ArticlesList
+                        articles={
+                          Array [
+                            Object {
+                              "description": "",
+                              "imageUrl": "",
+                              "keywords": Array [],
+                              "title": "",
+                            },
+                          ]
+                        }
+                        articlesError={null}
+                        articlesLoading={true}
+                      >
+                        <Spin
+                          size="large"
+                          spinning={true}
+                          wrapperClassName=""
+                        >
+                          <div
+                            className="ant-spin ant-spin-lg ant-spin-spinning"
+                          >
+                            <span
+                              className="ant-spin-dot ant-spin-dot-spin"
+                            >
+                              <i
+                                className="ant-spin-dot-item"
+                              />
+                              <i
+                                className="ant-spin-dot-item"
+                              />
+                              <i
+                                className="ant-spin-dot-item"
+                              />
+                              <i
+                                className="ant-spin-dot-item"
+                              />
+                            </span>
+                          </div>
+                        </Spin>
+                      </ArticlesList>
+                    </Suspense>
+                  </ArticleListPage>
+                </main>
+              </Basic>
+            </Content>
+          </section>
+        </BasicLayout>
+      </Layout>
+      <Footer>
+        <Basic
+          prefixCls="ant-layout-footer"
+          tagName="footer"
+        >
+          <footer
+            className="ant-layout-footer"
+          >
+            React - Redux - Saga ©
+          </footer>
+        </Basic>
+      </Footer>
+    </PageLayoutComponent>
+  </Connect(PageLayoutComponent)>
+</Provider>
+`;
+
+exports[`Test Suite - ArticleListPage Should render error 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(PageLayoutComponent)
+    articleList={null}
+    articleListError="Une erreur technique c'est produite, veuillez réessayez plus tard."
+    articleListLoading={false}
+  >
+    <PageLayoutComponent
+      articleList={null}
+      articleListError="Une erreur technique c'est produite, veuillez réessayez plus tard."
+      articleListLoading={false}
+      requestArticleList={[Function]}
+    >
+      <Header
+        style={
+          Object {
+            "background": "#78E1F3",
+            "height": "10vh",
+            "width": "100%",
+          }
+        }
+      >
+        <Basic
+          prefixCls="ant-layout-header"
+          style={
+            Object {
+              "background": "#78E1F3",
+              "height": "10vh",
+              "width": "100%",
+            }
+          }
+          tagName="header"
+        >
+          <header
+            className="ant-layout-header"
+            style={
+              Object {
+                "background": "#78E1F3",
+                "height": "10vh",
+                "width": "100%",
+              }
+            }
+          >
+            <Title>
+              <Base
+                component="h1"
+              >
+                <LocaleReceiver
+                  componentName="Text"
+                >
+                  <ResizeObserver
+                    disabled={true}
+                    onResize={[Function]}
+                  >
+                    <Typography
+                      className=""
+                      component="h1"
+                      style={
+                        Object {
+                          "WebkitLineClamp": null,
+                        }
+                      }
+                    >
+                      <h1
+                        className="ant-typography"
+                        style={
+                          Object {
+                            "WebkitLineClamp": null,
+                          }
+                        }
+                      >
+                        Gestion des articles
+                      </h1>
+                    </Typography>
+                  </ResizeObserver>
+                </LocaleReceiver>
+              </Base>
+            </Title>
+          </header>
+        </Basic>
+      </Header>
+      <Layout
+        style={
+          Object {
+            "background": "#ADCFF3",
+            "height": "80vh",
+          }
+        }
+      >
+        <BasicLayout
+          prefixCls="ant-layout"
+          style={
+            Object {
+              "background": "#ADCFF3",
+              "height": "80vh",
+            }
+          }
+          tagName="section"
+        >
+          <section
+            className="ant-layout ant-layout-has-sider"
+            style={
+              Object {
+                "background": "#ADCFF3",
+                "height": "80vh",
+              }
+            }
+          >
+            <Sider
+              theme="light"
+            >
+              <InternalSider
+                collapsedWidth={80}
+                collapsible={false}
+                defaultCollapsed={false}
+                reverseArrow={false}
+                siderHook={
+                  Object {
+                    "addSider": [Function],
+                    "removeSider": [Function],
+                  }
+                }
+                style={Object {}}
+                theme="light"
+                width={200}
+              >
+                <aside
+                  className="ant-layout-sider ant-layout-sider-light"
+                  style={
+                    Object {
+                      "flex": "0 0 200px",
+                      "maxWidth": "200px",
+                      "minWidth": "200px",
+                      "width": "200px",
+                    }
+                  }
+                >
+                  <div
+                    className="ant-layout-sider-children"
+                  >
+                    Menu
+                  </div>
+                </aside>
+              </InternalSider>
+            </Sider>
+            <Content>
+              <Basic
+                prefixCls="ant-layout-content"
+                tagName="main"
+              >
+                <main
+                  className="ant-layout-content"
+                >
+                  <ArticleListPage
+                    articleList={null}
+                    articleListError="Une erreur technique c'est produite, veuillez réessayez plus tard."
+                    articleListLoading={false}
+                    requestArticleList={[Function]}
+                  >
+                    <Suspense
+                      fallback={
+                        <Spin
+                          size="large"
+                          spinning={true}
+                          wrapperClassName=""
+                        />
+                      }
+                    >
+                      <ArticlesList
+                        articles={null}
+                        articlesError="Une erreur technique c'est produite, veuillez réessayez plus tard."
+                        articlesLoading={false}
+                      >
+                        <Alert
+                          description="Une erreur technique c'est produite, veuillez réessayez plus tard."
+                          message="Chargement des articles"
+                          type="error"
+                        >
+                          <CSSMotion
+                            motionAppear={false}
+                            motionEnter={false}
+                            motionName="ant-alert-motion"
+                            onLeaveStart={[Function]}
+                            visible={true}
+                          >
+                            <DomWrapper>
+                              <div
+                                className="ant-alert ant-alert-error ant-alert-with-description ant-alert-no-icon"
+                                data-show={true}
+                                role="alert"
+                                style={Object {}}
+                              >
+                                <span
+                                  className="ant-alert-message"
+                                >
+                                  Chargement des articles
+                                </span>
+                                <span
+                                  className="ant-alert-description"
+                                >
+                                  Une erreur technique c'est produite, veuillez réessayez plus tard.
+                                </span>
+                              </div>
+                            </DomWrapper>
+                          </CSSMotion>
+                        </Alert>
+                      </ArticlesList>
+                    </Suspense>
+                  </ArticleListPage>
+                </main>
+              </Basic>
+            </Content>
+          </section>
+        </BasicLayout>
+      </Layout>
+      <Footer>
+        <Basic
+          prefixCls="ant-layout-footer"
+          tagName="footer"
+        >
+          <footer
+            className="ant-layout-footer"
+          >
+            React - Redux - Saga ©
+          </footer>
+        </Basic>
+      </Footer>
+    </PageLayoutComponent>
+  </Connect(PageLayoutComponent)>
+</Provider>
+`;
+
+exports[`Test Suite - ArticleListPage Should render loading state 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(PageLayoutComponent)
+    articleList={null}
+    articleListError={null}
+    articleListLoading={true}
+  >
+    <PageLayoutComponent
+      articleList={null}
+      articleListError={null}
+      articleListLoading={true}
+      requestArticleList={[Function]}
+    >
+      <Header
+        style={
+          Object {
+            "background": "#78E1F3",
+            "height": "10vh",
+            "width": "100%",
+          }
+        }
+      >
+        <Basic
+          prefixCls="ant-layout-header"
+          style={
+            Object {
+              "background": "#78E1F3",
+              "height": "10vh",
+              "width": "100%",
+            }
+          }
+          tagName="header"
+        >
+          <header
+            className="ant-layout-header"
+            style={
+              Object {
+                "background": "#78E1F3",
+                "height": "10vh",
+                "width": "100%",
+              }
+            }
+          >
+            <Title>
+              <Base
+                component="h1"
+              >
+                <LocaleReceiver
+                  componentName="Text"
+                >
+                  <ResizeObserver
+                    disabled={true}
+                    onResize={[Function]}
+                  >
+                    <Typography
+                      className=""
+                      component="h1"
+                      style={
+                        Object {
+                          "WebkitLineClamp": null,
+                        }
+                      }
+                    >
+                      <h1
+                        className="ant-typography"
+                        style={
+                          Object {
+                            "WebkitLineClamp": null,
+                          }
+                        }
+                      >
+                        Gestion des articles
+                      </h1>
+                    </Typography>
+                  </ResizeObserver>
+                </LocaleReceiver>
+              </Base>
+            </Title>
+          </header>
+        </Basic>
+      </Header>
+      <Layout
+        style={
+          Object {
+            "background": "#ADCFF3",
+            "height": "80vh",
+          }
+        }
+      >
+        <BasicLayout
+          prefixCls="ant-layout"
+          style={
+            Object {
+              "background": "#ADCFF3",
+              "height": "80vh",
+            }
+          }
+          tagName="section"
+        >
+          <section
+            className="ant-layout ant-layout-has-sider"
+            style={
+              Object {
+                "background": "#ADCFF3",
+                "height": "80vh",
+              }
+            }
+          >
+            <Sider
+              theme="light"
+            >
+              <InternalSider
+                collapsedWidth={80}
+                collapsible={false}
+                defaultCollapsed={false}
+                reverseArrow={false}
+                siderHook={
+                  Object {
+                    "addSider": [Function],
+                    "removeSider": [Function],
+                  }
+                }
+                style={Object {}}
+                theme="light"
+                width={200}
+              >
+                <aside
+                  className="ant-layout-sider ant-layout-sider-light"
+                  style={
+                    Object {
+                      "flex": "0 0 200px",
+                      "maxWidth": "200px",
+                      "minWidth": "200px",
+                      "width": "200px",
+                    }
+                  }
+                >
+                  <div
+                    className="ant-layout-sider-children"
+                  >
+                    Menu
+                  </div>
+                </aside>
+              </InternalSider>
+            </Sider>
+            <Content>
+              <Basic
+                prefixCls="ant-layout-content"
+                tagName="main"
+              >
+                <main
+                  className="ant-layout-content"
+                >
+                  <ArticleListPage
+                    articleList={null}
+                    articleListError={null}
+                    articleListLoading={true}
+                    requestArticleList={[Function]}
+                  >
+                    <Suspense
+                      fallback={
+                        <Spin
+                          size="large"
+                          spinning={true}
+                          wrapperClassName=""
+                        />
+                      }
+                    >
+                      <Spin
+                        size="large"
+                        spinning={true}
+                        wrapperClassName=""
+                      >
+                        <div
+                          className="ant-spin ant-spin-lg ant-spin-spinning"
+                        >
+                          <span
+                            className="ant-spin-dot ant-spin-dot-spin"
+                          >
+                            <i
+                              className="ant-spin-dot-item"
+                            />
+                            <i
+                              className="ant-spin-dot-item"
+                            />
+                            <i
+                              className="ant-spin-dot-item"
+                            />
+                            <i
+                              className="ant-spin-dot-item"
+                            />
+                          </span>
+                        </div>
+                      </Spin>
+                    </Suspense>
+                  </ArticleListPage>
+                </main>
+              </Basic>
+            </Content>
+          </section>
+        </BasicLayout>
+      </Layout>
+      <Footer>
+        <Basic
+          prefixCls="ant-layout-footer"
+          tagName="footer"
+        >
+          <footer
+            className="ant-layout-footer"
+          >
+            React - Redux - Saga ©
+          </footer>
+        </Basic>
+      </Footer>
+    </PageLayoutComponent>
+  </Connect(PageLayoutComponent)>
+</Provider>
+`;

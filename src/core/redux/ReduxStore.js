@@ -5,6 +5,7 @@ import {
   combineReducers,
 } from 'redux';
 import createSagaMiddleware from 'redux-saga';
+import MyCustomMiddleware from './MyCustomMiddleware';
 
 const composeEnhancers = typeof window === 'object'
     && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
@@ -25,6 +26,7 @@ const ReduxStore = (ReducerRoot) => {
   // create store
   const reduxStore = createStore(
     reduxReducers,
+    // composeEnhancers(applyMiddleware(sagaMiddleware, MyCustomMiddleware))
     composeEnhancers(applyMiddleware(sagaMiddleware))
   );
 

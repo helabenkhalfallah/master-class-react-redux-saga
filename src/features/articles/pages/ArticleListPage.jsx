@@ -5,6 +5,7 @@ import {
 } from 'antd';
 import ReduxConnect from '../../../core/redux/ReduxConnect';
 import withPageLayout from '../../commons/hocs/withPageLayout';
+import withHabilitations from '../../commons/hocs/habilitations/withHabilitations';
 import ArticlesProvider from '../redux/ArticlesProvider';
 import ArticlesDispatcher from '../redux/ArticlesDispatcher';
 
@@ -18,6 +19,7 @@ const {
   ArticleListFragment,
 } = ArticlesProvider;
 
+@withHabilitations()
 @ReduxConnect((state) => ({
   ...ArticleListFragment(state),
 }), {
